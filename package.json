@@ -1,0 +1,26 @@
+{
+  "name": "scoretracker",
+  "version": "1.0.0",
+  "description": "mongodb_project_1.md דף 1 / 1 100% # פרויקט Atlas: Score Tracker — לוח תוצאות חי",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yonieifer/score-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yonieifer/score-tracker/issues"
+  },
+  "homepage": "https://github.com/yonieifer/score-tracker#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongodb": "^7.5.0"
+  }
+}
