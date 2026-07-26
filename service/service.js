@@ -10,18 +10,18 @@ export const createScore = async (data) => {
     return newId;
 };
 
-const getGameTopTen = async (game) => {
+export const getGameTopTen = async (game) => {
     const topTen = await read({game: game}, {points: -1}, 10)
     return topTen
 }
 
-const gatGlobalTopTen = async () => {
-    const topTen = await read(null, {points: -1}, 10)
+export const getGlobalTopTen = async () => {
+    const topTen = await read({}, {points: -1}, 10)
     return topTen
 }
 
-const getPlayerScores = async (name) => {
-    const playerScores = await read({playerName: name}, {points: -1}, null)
+export const getPlayerScores = async (name) => {
+    const playerScores = await read({playerName: name}, {points: -1}, {})
     return playerScores
 }
 
