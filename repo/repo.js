@@ -9,7 +9,7 @@ export const create = async (data) => {
 }
 
 export const read = async (filter={}, sort={}, limit=0) => {
-    const result = await collection.find(filter).sort(sort).limit(limit)
+    const result = await collection.find(filter).sort(sort).limit(limit).toArray()
     return result
 }
 
