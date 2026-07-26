@@ -11,3 +11,5 @@ router.post("/", async (req, res, next) => {
     const id = await createScore({playerName, game, points})
     res.status(201).send(`creted | id: ${id}`)
 })
+
+export default router
